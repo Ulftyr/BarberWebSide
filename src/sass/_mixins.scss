@@ -1,0 +1,7 @@
+@mixin burger-line {
+	width: 50px;
+	height: 5px;
+	border-radius: 3px;
+	background-color: #333;
+    transition: all 0.5s;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webside Barber</title>
+    <!-- @include 'link.kit' -->
+</head>
+
+<body>
+    <nav class="nav">
+
+        <div class="nav__logo">
+            <h1 class="nav__logo-title">CyberBarber</h1>
+            <i class="nav__logo-icon fas fa-skull"></i>
+        </div>
+
+        <div class="nav__menu">
+            <ul class="nav__menu-list">
+                <li id="#home" class="nav__menu-item"><a href="#home" class="link">Home</a></li>
+                <li id="#offer" class="nav__menu-item"><a href="#offer" class="link">Oferta</a></li>
+                <li id="#reserve" class="nav__menu-item"><a href="#reserve" class="link">Umów wizytę</a></li>
+                <li id="#gallery" class="nav__menu-item"><a href="#gallery" class="link">Galeria</a></li>
+                <li id="#" class="nav__menu-item"><a href="#barbers" class="link">Barberzy</a></li>
+                <li id="#" class="nav__menu-item"><a href="#contact" class="link">Kontakt</a></li>
+            </ul>
+            <div class="nav__mobile">
+                <div class="nav__mobile-burger"></div>
+            </div>
+        </div>
+
+    </nav>
+
+    <header class="header">
+        <div class="header__hero">
+            <h1 class="header__hero-title">CyberBarber<i class="fas fa-skull"></i></h1>
+            <p class="header__hero-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate.</p>
+            <button class="header__btn-visit">Umów wizytę!</button>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="wrapper">
+            <section id="offer" class="offer">
+                <h1 class="offer__title title">Oferta</h1>
+                <table class="offer__table">
+                    <tr class="offer__table-row">
+                        <th class="offer__table-column">Strzyżenie męskie</th>
+                        <th class="offer__table-column cost">80zł</th>
+                        <th class="offer__table-column"><button class="offer__reserve"><span
+                                    class="table-btn-text">Zarezerwuj</span><i
+                                    class="fas fa-calendar-check"></i></button></th>
+                    </tr>
+                    <tr class="offer__row">
+                        <th class="offer__table-column">Strzyżenie męskie - włosy długie</th>
+                        <th class="offer__table-column cost">100zł</th>
+                        <th class="offer__table-column"><button class="offer__reserve"><span
+                                    class="table-btn-text">Zarezerwuj</span><i
+                                    class="fas fa-calendar-check"></i></button></th>
+                    </tr>
+                    <tr class="offer__row">
+                        <th class="offer__table-column">Depilacja woskiem - nos oraz brwi</th>
+                        <th class="offer__table-column cost">30zł</th>
+                        <th class="offer__table-column"><button class="offer__reserve"><span
+                                    class="table-btn-text">Zarezerwuj</span><i
+                                    class="fas fa-calendar-check"></i></button></th>
+                    </tr>
+                    <tr class="offer__row">
+                        <th class="offer__table-column">Broda - kontur maszynką</th>
+                        <th class="offer__table-column cost">50zł</th>
+                        <th class="offer__table-column"><button class="offer__reserve"><span
+                                    class="table-btn-text">Zarezerwuj</span><i
+                                    class="fas fa-calendar-check"></i></button></th>
+                    </tr>
+                    <tr class="offer__row">
+                        <th class="offer__table-column">Strzyżenie + broda</th>
+                        <th class="offer__table-column cost">120zł</th>
+                        <th class="offer__table-column"><button class="offer__reserve"><span
+                                    class="table-btn-text">Zarezerwuj</span><i
+                                    class="fas fa-calendar-check"></i></button></th>
+                    </tr>
+                    <tr class="offer__row">
+                        <th class="offer__table-column">Broda - Trymowanie + podcięcie + kontur brzytwą</th>
+                        <th class="offer__table-column cost">100zł</th>
+                        <th class="offer__table-column"><button class="offer__reserve"><span
+                                    class="table-btn-text">Zarezerwuj</span><i
+                                    class="fas fa-calendar-check"></i></button></th>
+                    </tr>
+                    <tr class="offer__row">
+                        <th class="offer__table-column">Strzyżenie + trymowanie brody + kontur brzytwą</th>
+                        <th class="offer__table-column cost">130zł</th>
+                        <th class="offer__table-column"><button class="offer__reserve"><span
+                                    class="table-btn-text">Zarezerwuj</span><i
+                                    class="fas fa-calendar-check"></i></button></th>
+                    </tr>
+                    <tr class="offer__row">
+                        <th class="offer__table-column">Cover włosów lub brody</th>
+                        <th class="offer__table-column cost">60zł</th>
+                        <th class="offer__table-column"><button class="offer__reserve"><span
+                                    class="table-btn-text">Zarezerwuj</span><i
+                                    class="fas fa-calendar-check"></i></button></th>
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+
+        <section id="reserve" class="reserve">
+            <h1 class="reserve__title title">Umów wizytę</h1>
+            <form class="reserve__form" action="">
+                <label class="reserve__form-title" for="name">Imię i nazwisko: </label>
+                <input class="reserve__form-input" type="text" name="name" id="name">
+
+                <label class="reserve__form-title" for="e-mail">Adres e-mail: </label>
+                <input class="reserve__form-input" type="e-mail" name="e-mail" id="e-mail">
+
+                <label class="reserve__form-title" for="date">Wybierz datę strzyżenia: </label>
+                <input class="reserve__form-input" type="date" name="date" id="date">
+
+                <label class="reserve__form-title" for="time">Wybierz godzinę strzyżenia: </label>
+                <input class="reserve__form-input" type="time" name="time" id="time">
+
+                <label class="reserve__form-title" for="procedure">Wybierz zabieg: </label>
+                <select class="reserve__form-input" name="procedure" id="procedure">
+                    <option value="1">Strzyżenie męskie</option>
+                    <option value="2">Strzyżenie męskie - włosy długie</option>
+                    <option value="3">Depilacja woskiem - nos oraz brwi</option>
+                    <option value="4">Broda - kontur maszynką</option>
+                    <option value="5">Strzyżenie + broda</option>
+                    <option value="6">Broda - Trymowanie + podcięcie + kontur brzytwą</option>
+                    <option value="7">Strzyżenie + trymowanie brody + kontur brzytwą</option>
+                    <option value="8">Cover włosów lub brody</option>
+                </select>
+                <button class="reserve__form-btn" type="submit">Wyślij</button>
+            </form>
+        </section>
+
+
+        <div class="wrapper">
+            <section id="gallery" class="gallery">
+                <h1 class="reserve__title title">Galeria</h1>
+                <div class="gallery__slider">
+                    <div class="gallery__slider-box">
+                        <img class="gallery__slider-img" src="./dist/img/photo1-desktop.jpg" alt="">
+                        <img class="gallery__slider-img" src="./dist/img/photo2-desktop.jpg" alt="">
+                        <img class="gallery__slider-img" src="./dist/img/photo3-desktop.jpg" alt="">
+                    </div>
+                    <button class="gallery__btn gallery__btn-left"><i class="fas fa-chevron-left"></i></button>
+                    <button class="gallery__btn gallery__btn-right"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="gallery__mobile">
+                    <img class="gallery__mobile-img" src="./dist/img/photo1-mobile.jpg" alt="">
+                    <img class="gallery__mobile-img" src="./dist/img/photo2-mobile.jpg" alt="">
+                    <img class="gallery__mobile-img" src="./dist/img/photo3-mobile.jpg" alt="">
+                </div>
+            </section>
+        </div>
+
+        <div id="barbers" class="barbers">
+            <h1 class="barbers__title title">Nasi Barberzy!</h1>
+            <div class="barbers__cards-box">
+                <div class="barbers__card card-one">
+                    <h2 class="barbers__card-name">Wojtek</h2>
+                    <p class="barbers__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+                        similique sequi repudiandae assumenda, quisquam ratione qui voluptates deserunt dolorem nulla.
+                    </p>
+                </div>
+                <div class="barbers__card card-two">
+                    <h2 class="barbers__card-name">Antoni</h2>
+                    <p class="barbers__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                        officia dignissimos. Voluptates quo, voluptatum officiis suscipit id laudantium distinctio
+                        explicabo.</p>
+                </div>
+                <div class="barbers__card card-three">
+                    <h2 class="barbers__card-name">Andrzej</h2>
+                    <p class="barbers__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cumque
+                        quod dolor at animi beatae numquam excepturi dolores a illum!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact" class="footer">
+
+        <div class="contact__data wrapper">
+            <p class="contact__data-logo">CyberBarber <i class="fas fa-skull"></i></p>
+            <div class="contact__data-adress">
+                <ul class="contact__data-table">
+                    <li class="contact__data-item"><span>Adres:</span> ul. Powstańców 00, 00-000 Wrocław</li>
+                    <li class="contact__data-item"><span>Telefon:</span> 000 000 000</li>
+                    <li class="contact__data-item"><span>Email:</span> cyberbarber@gmail.com</li>
+                </ul>
+            </div>
+            <iframe class="google-maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.396393403272!2d16.999947825037143!3d51.11726315536731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fea002cc19fe5%3A0xfc91cdfb741afa7c!2sLegnicka%2C%2053-671%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1654005749794!5m2!1spl!2spl"
+                width="650" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-bottom__copyright">&copy; CyberBarber 2022</p>
+            <div class="footer-bottom__social-media">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram-square"></i>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- @include 'script.kit' -->
+</body>
+
+</html>
